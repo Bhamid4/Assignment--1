@@ -1,0 +1,37 @@
+ <!-- Bilal Hamid
+   301037289 -->
+
+
+    <%- include('partials/header'); %>
+    <!-----Main Nav--->
+    <%- include('partials/main_nav'); %>
+
+<main class="container-md text-dark"> 
+    <div class="jumbotron"> 
+      <h1 class="display-4">Welcome to the <%= title %> page</h1>
+  
+      <%if (title == "Home"){ %>
+        <br>
+        <div class=" bg-secondary container text-white rounded-4">
+          <ul>Mission Statement
+          <li>As an engineer, I. I approach challenges analytically and come up with a workable solution that won't just be a temporary repair but has lasting worth.</li>
+            <li>I am a member of a group. I engage in proactive and transparent communication with my software development team. I live for the reliability and honesty of my team's productions.</li>
+              <li>I am a student now and will always be one. I'll continue to think like a beginner by exploring and experimenting without worrying about failing. There will always be new things for me to learn, and I will fail, which helps me grow.</li>
+                  <li>I am both a realistic and an optimistic. I always stick to this mission statement in good faith and work together with my team to accomplish exceptional results.</li>
+        </ul>
+        </div>
+        <div class="container-md bg-burlywood  text-white ">
+          <a class="btn btn-outline-dark align-self-center" href="/about">About Me</a>
+        </div>
+        
+    </div>
+    </main>
+
+
+
+
+<!--Bottom Nav-->
+<%- include('partials/bottom_nav'); %>
+  
+<!-- footer -->
+<%- include('partials/footer'); %>
